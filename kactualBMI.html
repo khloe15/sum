@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI grade calculator</title>
+</head>
+<body>
+    <h2>We will calculate your Grade - by khloe</h2>
+    <input type="number" id="grade" placeholder="Enter your grade.">
+    <button onclick="calculateGrade()">Calculate Grade</button>
+    <p>Your Grade is: <span id="Grade"></span></p>
+	<script>
+        function calculateGrade() {
+            // Get the values from the input fields
+            let grade = parseFloat(document.getElementById('grade).value);
+          
+            
+            // Calculate the Grade
+			let Grade;
+              if (score >= 85) {
+        grade = "A";
+        message = "Excellent!";
+    } else if (score >= 75) {
+        grade = "B";
+        message = "Good try!";
+    } else if (score >= 65) {
+        grade = "C";
+        message = "Do better next time.";
+    } else if (score >= 50) {
+        grade = "D";
+        message = "You need to improve.";
+    } else {
+        grade = "F";
+        message = "You to study harder.";
+    }
+            // Display the Grade
+            document.getElementById('Finalscore').textContent = score;
+			 // Display the Grade
+            document.getElementById('Finalscore').textContent = score;
+        }
+		
+    </script>
+</body>
+</html>
